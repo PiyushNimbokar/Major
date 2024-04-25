@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    {% load tailwind_tags %}
+    {% tailwind_css %}
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-green-100 text-gray-700">
+    <div class="min-h-screen flex fle-col items-center justify-center py-6 px-4">
+        <div class="grid md:grid-cols-2 items-center gap-10 max-w-6xl w-full">
+            <div>
+                <h2 class="lg:text-5xl text-4xl font-extrabold lg:leading-[55px]">
+                    Seamless Registration for Exclusive Benefits
+                </h2>
+                <p class="text-sm mt-6">Experience a smooth and effortless registration process with our intuitively designed registration form. Sign up to unlock exclusive benefits.</p>
+                <p class="text-sm mt-10">Already have an account <a href="javascript:void(0);" class="text-blue-600 font-semibold hover:underline ml-1">Login here</a></p>
+            </div>
+            <form id="registrationForm" class="bg-white md:max-w-lg md:ml-auto w-full">
+                <div class="mb-12">
+                    <h3 class="text-3xl font-extrabold">Register</h3>
+                </div>
+                <div>
+                    <label class="text-xs block mb-2">Full Name</label>
+                    <div class="grid grid-cols-2 gap-4">
+                        <input name="firstName" type="text" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none" placeholder="First Name" />
+                        <input name="lastName" type="text" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none" placeholder="Last Name" />
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <label class="text-xs block mb-2">Mobile Number</label>
+                    <input name="mobileNumber" type="text" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none" placeholder="Enter Mobile Number" />
+                </div>
+                <div class="mt-6">
+                    <button id="otpButton" type="button" class="w-full py-2.5 px-8 text-sm font-semibold rounded text-white bg-[#333] hover:bg-[#222] focus:outline-none transition-all">
+                        Request OTP
+                    </button>
+                </div>
+                <div id="otpContainer" class="hidden mt-6">
+                    <label class="text-xs block mb-2">OTP</label>
+                    <input name="otp" type="text" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none" placeholder="Enter OTP" />
+                </div>
+                <!-- Add Aadhar verification field if needed -->
+                <!-- <div class="mt-6">
+                    <label class="text-xs block mb-2">Aadhar Number</label>
+                    <input name="aadharNumber" type="text" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none" placeholder="Enter Aadhar Number" />
+                </div> -->
+                <div class="mt-6">
+                    <label class="text-xs block mb-2">Password</label>
+                    <input name="password" type="password" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none" placeholder="Enter password" />
+                </div>
+                <div class="mt-6">
+                    <label class="text-xs block mb-2">Confirm Password</label>
+                    <input name="confirmPassword" type="password" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none" placeholder="Confirm password" />
+                </div>
+                <div class="flex items-center mt-8">
+                    <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 shrink-0 rounded" />
+                    <label for="remember-me" class="ml-3 block text-sm">
+                        I accept the <a href="javascript:void(0);" class="text-blue-500 font-semibold hover:underline ml-1">Terms and Conditions</a>
+                    </label>
+                </div>
+                <div class="mt-12">
+                    <button type="submit" class="w-full py-2.5 px-8 text-sm font-semibold rounded text-white bg-[#333] hover:bg-[#222] focus:outline-none transition-all">
+                        Register
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for requesting OTP on button click
+        document.getElementById('otpButton').addEventListener('click', function() {
+            // Show the OTP container
+            document.getElementById('otpContainer').classList.remove('hidden');
+        });
+
+        // JavaScript for form submission with validation
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            // Validate the form fields before submission
+            const password = document.getElementsByName('password')[0].value;
+            const confirmPassword = document.getElementsByName('confirmPassword')[0].value;
+            if (password !== confirmPassword) {
+                alert('Password and Confirm Password must match.');
+                event.preventDefault(); // Prevent form submission
+            } else {
+                // Form is valid, submit it
+                // For demonstration purposes, we'll just log the form data
+                const formData = new FormData(this);
+                for (const pair of formData.entries()) {
+                    console.log(pair[0], pair[1]);
+                }
+                // You can perform form submission via AJAX here
+            }
+        });
+    </script>
+</body>
+</html>
