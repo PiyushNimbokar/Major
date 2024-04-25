@@ -7,8 +7,8 @@
     {% load tailwind_tags %}
     {% tailwind_css %}
 </head>
-<body class="bg-gradient-to-br from-gray-50 to-green-100 text-gray-700">
-    <div class="min-h-screen flex fle-col items-center justify-center py-6 px-4">
+<body>
+    <div class="font-[sans-serif] text-[#333] min-h-screen flex fle-col items-center justify-center py-6 px-4">
         <div class="grid md:grid-cols-2 items-center gap-10 max-w-6xl w-full">
             <div>
                 <h2 class="lg:text-5xl text-4xl font-extrabold lg:leading-[55px]">
@@ -17,7 +17,7 @@
                 <p class="text-sm mt-6">Experience a smooth and effortless registration process with our intuitively designed registration form. Sign up to unlock exclusive benefits.</p>
                 <p class="text-sm mt-10">Already have an account <a href="javascript:void(0);" class="text-blue-600 font-semibold hover:underline ml-1">Login here</a></p>
             </div>
-            <form id="registrationForm" class="bg-white md:max-w-lg md:ml-auto w-full">
+            <form id="registrationForm" class="bg-white md:max-w-[800] md:ml-auto w-full">
                 <div class="mb-12">
                     <h3 class="text-3xl font-extrabold">Register</h3>
                 </div>
@@ -42,10 +42,10 @@
                     <input name="otp" type="text" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none" placeholder="Enter OTP" />
                 </div>
                 <!-- Add Aadhar verification field if needed -->
-                <!-- <div class="mt-6">
+                <div class="mt-6">
                     <label class="text-xs block mb-2">Aadhar Number</label>
                     <input name="aadharNumber" type="text" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none" placeholder="Enter Aadhar Number" />
-                </div> -->
+                </div> 
                 <div class="mt-6">
                     <label class="text-xs block mb-2">Password</label>
                     <input name="password" type="password" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none" placeholder="Enter password" />
@@ -96,4 +96,4 @@
         });
     </script>
 </body>
-</html>
+</
