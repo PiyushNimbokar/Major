@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="confirm.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    <div class="left">
+                        <ul class="flexitem main-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul class="flexitem main-links">
+                            <li>
+                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#">My Account</a></li>
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="form-container">
+        <div class="heading">
+        <h2>Confirm Your Order</h2>
+        <pre>Kindly fill the agreement to proceed towards confirming your order.</pre>
+    </div>
+        <div class="aform">
+            <form action="/">
+          <div class="name">      
+        <div class="fname">
+            <label>First name</label>
+            <input type="text" placeholder="First name" id="">
+        </div>
+        <div class="lname">
+            <label>Last name</label>
+            <input type="text" placeholder="Last name" id="">
+        </div>
+    </div>
+            <div class="contact">
+                <div class="phone">
+                    <label>Contact number</label>
+                    <input type="text" placeholder="+91-" id="">
+                </div>
+                <div class="email">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="abc@gmail.com" id="">
+                </div>
+            </div>
+            
+            <div class="share-location">
+                <label>Enter your location </label>
+                <input type="text"> 
+                <button type="submit">Share Location</button>
+            </div>
+            
+            <label style="margin-left: 10px;">Equipment Details</label>
+            <div class="eq-info">
+                <div class="pdetails">
+                    <div class="pimg">
+                        <img src="/6.jpg" alt="/">
+                    </div>
+                    <div class="pbnp">
+                        <span id="pbrand">Mahindra</span><br>
+                        <span id="pname">265-DI-tractor</span><br>
+                        <span id="price">Rs. 5,00,000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+            <div class="sec">
+                <label style="width: 50%;">Security Deposit</label>
+                <input style="width: 50%;" type="text" name="sec" id="secd" placeholder="Rs.">
+            </div>
+            <div class="total">
+                <label style="width: 50%;">Total Amount</label>
+                <input style="width: 50%;" type="text" name="total" id="totala" placeholder="Rs.">
+            </div>
+        </div>
+            <div class="period">
+                <div class="from">
+                    <label>Rental Period (FROM)</label>
+                    <input type="date"> 
+                </div>      
+                <div class="to">      
+                    <label>Rental Period (TO)</label>
+                    <input type="date"> 
+                </div>
+            </div>
+            <!-- <div class="column">
+                <label>Time (FROM)</label>
+                <input type="time">
+            </div>
+            <div class="input">
+            <label>Time (TO)</label>
+            <input type="time">
+        </div> -->
+        <div class="adate">
+            <label>Agreement Date</label>
+            <input type="date">
+        </div>
+        <div class="sign">
+            <label>Renter Signature</label>
+            <input type="text" id="sign" placeholder="Signature">
+        </div>
+        <div style="margin-left: 10px;" class="check">
+            <input type="checkbox" name="i-agree" id="">
+            <span>I agree to the <a href="#">Terms and Conditions(T&C)</a> and all the information filled in the rental agreement is true to the best of my knowledge. </span>
+        </div>
+        <div style="margin-left: 10px;" class="btn">
+            <button type="submit">Submit</button>
+            <button>Download Agreement</button>    
+        </div>
+        </form>
+        
+        <div class="proceed">
+            <button>Proceed Payment</button>    
+        </div>
+    </div>
+    
+
+        
+        
+  
+</div>
+
+</body>
+</html>

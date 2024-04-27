@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="page" class="site">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <ul class="flexitem main-links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem main-links">
+                                <li>
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">My Account</a></li>
+                               </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div id="page" class="site-page-category">
+            <main>
+                <div class="single-category">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="column">
+                                <div class="holder">
+                                    <div class="row sidebar">
+                                        <div class="filter">
+                                            <div class="filter-block">
+                                                <h3>Category</h3>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="tractors">
+                                                        <label for="tractors">
+                                                            <span class="checked"></span>
+                                                            <span>Tractors</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="tillage equipment">
+                                                        <label for="tillage equipment">
+                                                            <span class="checked"></span>
+                                                            <span>Tillage Equipment</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="seeding equipment">
+                                                        <label for="seeding equipment">
+                                                            <span class="checked"></span>
+                                                            <span>Seeding Equipment</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="landscape equipment">
+                                                        <label for="landscape equipment">
+                                                            <span class="checked"></span>
+                                                            <span>Landscape Equipment</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="crop protection">
+                                                        <label for="crop protection">
+                                                            <span class="checked"></span>
+                                                            <span>Crop Protection</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="harvest equipment">
+                                                        <label for="harvest equipment">
+                                                            <span class="checked"></span>
+                                                            <span>Harvest Equipment</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="post harvest">
+                                                        <label for="post harvest">
+                                                            <span class="checked"></span>
+                                                            <span>Post Harvest</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="haulage">
+                                                        <label for="haulage">
+                                                            <span class="checked"></span>
+                                                            <span>Haulage</span>
+                                                        </label>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="filter-block">
+                                                <h3>Brands</h3>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="mahindra">
+                                                        <label for="mahindra">
+                                                            <span class="checked"></span>
+                                                            <span>Mahindra</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="john deere">
+                                                        <label for="john deere">
+                                                            <span class="checked"></span>
+                                                            <span>John Deere</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="force motors">
+                                                        <label for="force motors">
+                                                            <span class="checked"></span>
+                                                            <span>Force Motors</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="tafe">
+                                                        <label for="tafe">
+                                                            <span class="checked"></span>
+                                                            <span>Tafe</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="sonalika">
+                                                        <label for="sonalika">
+                                                            <span class="checked"></span>
+                                                            <span>Sonalika</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="fliter-block-pricing">
+                                                <h3 id="pr">Price Range</h3>
+                                                <div class="byprice">
+                                                    <div class="range-track">
+                                                        <pre>Per Day</pre>
+                                                        <input type="range" value="1,49,000" min="0" max="20,00,000" id="range">
+                                                        <pre>Per Hour</pre>
+                                                        <input type="range" value="1,49,000" min="0" max="20,00,000" id="range">
+                                                        <pre>Per Hectare</pre>
+                                                        <input type="range" value="1,49,000" min="0" max="20,00,000" id="range">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section">
+                                        <div class="row">
+                                             <div class="cat-head">
+                                                <div class="breadcrumb">
+                                                    <ul class="flexitem">
+                                                        <li style="font-size: 15px;"><a href="#">Home</a></li> /
+                                                       
+                                                        <li style="color: rgb(134, 132, 132);font-size: 15px;"> All Products</li>
+                                                    </ul>
+                                                </div>
+                                                <!-- <div class="search-bar">   
+                                                    <form class="search">
+                                                        <input type="search" id="search-box" placeholder="Enter your search">
+                                                        <label for="search-box" class="fa fa-search"></label>
+                                                    </form>                                      
+                                                        <i class="fas fa-search" id="search-btn"></i>                                                                                                     
+                                                </div> -->
+                                                <div class="search-bar">
+                                                    <input type="search" placeholder="Enter your search">
+                                                    <a href="#"><i class="fa fa-search icon-search"></i></a>
+                                                </div>
+                                             </div>
+                                        </div>
+                                        <section id="products">
+                                        <div class="product-container">
+                                            <div class="pro">
+                                                <img src="/1.jpeg" alt="">
+                                                <div class="des">
+                                                    <span>John Deere</span>
+                                                    <h5>750 Seed Drill</h5>
+                                                    
+                                                    <h4><i class="fa-regular fa-indian-rupee-sign"></i>Rs.70,000</h4>
+                                                </div>
+                                                <a href="#"><i class="ri-arrow-right-s-line angle"></i></a>
+                                            </div>
+                                            <div class="pro">
+                                                <img src="/2.jpg" alt="">
+                                                <div class="des">
+                                                    <span>John Deere</span>
+                                                    <h5>2633_tillage</h5>
+                                                    <h4>Rs.1,15,000</h4>
+                                                </div>
+                                                <a href="#"><i class="ri-arrow-right-s-line angle"></i></a>
+                                            </div>
+                                            <div class="pro">
+                                                <img src="/3.jpg" alt="">
+                                                <div class="des">
+                                                    <span>John Deere</span>
+                                                    <h5>2660_vertical tillage</h5>
+                                                    <h4>Rs.1,22,000</h4>
+                                                </div>
+                                                <a href="#"><i class="ri-arrow-right-s-line angle"></i></a>
+                                            </div>
+                                            <div class="pro">
+                                                <img src="/4.jpg" alt="">
+                                                <div class="des">
+                                                    <span>John Deere</span>
+                                                    <h5>John-Deere-6110B</h5>
+                                                    <h4>Rs.30,00,000</h4>
+                                                </div>
+                                                <a href="#"><i class="ri-arrow-right-s-line angle"></i></a>
+                                            </div>
+                                            <div class="pro">
+                                                <img src="/5.jpg" alt="">
+                                                <div class="des">
+                                                    <span>John Deere</span>
+                                                    <h5>Seed Driller SD1009</h5>
+                                                    <h4>Rs.80,000</h4>
+                                                </div>
+                                                <a href="#"><i class="ri-arrow-right-s-line angle"></i></a>
+                                            </div>
+                                            <div class="pro">
+                                                <img src="/6.jpg" alt="">
+                                                <div class="des">
+                                                    <span>Mahindra</span>
+                                                    <h5>Mahindra-265-DI-tractor</h5>
+                                                    <h4>Rs.5,00,000</h4>
+                                                </div>
+                                                <a href="#"><i class="ri-arrow-right-s-line angle"></i></a>
+                                            </div>
+                                            <div class="pro">
+                                                <img src="/7.jpg" alt="">
+                                                <div class="des">
+                                                    <span>Mahindra</span>
+                                                    <h5>Mahindra-tractor-265-275-475</h5>
+                                                    <h4>Rs.5,10,000</h4>
+                                                </div>
+                                                <a href="#"><i class="ri-arrow-right-s-line angle"></i></a>
+                                            </div>
+                                            <div class="pro">
+                                                <img src="/8.jpg" alt="">
+                                                <div class="des">
+                                                    <span>John Deere</span>
+                                                    <h5>Roto Seeder-250x250</h5>
+                                                    <h4>Rs.1,75,000</h4>
+                                                </div>
+                                                <a href="#"><i class="ri-arrow-right-s-line angle"></i></a>
+                                            </div>
+                                            <div class="pro">
+                                                <img src="/9.jpeg" alt="">
+                                                <div class="des">
+                                                    <span>John Deere</span>
+                                                    <h5>Seed Drill</h5>
+                                                    <h4>Rs.85,000</h4>
+                                                </div>
+                                                <a href="#"><i class="ri-arrow-right-s-line angle"></i></a>
+                                            </div>
+
+                                            </div>
+                                        </section>
+
+                                            
+                                        </div>
+                                        <div class="load-more flexcenter">
+                                            <a href="#" class="secondary-button"></a>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+        
+        <footer></footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

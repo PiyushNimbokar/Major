@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+:root {
+    --primary-color: #0d6c00;
+    --secondary-color: #d40020;
+    --secondary-dark-color: #254FDA;
+ 
+    --white-color: #ffffff;
+    --light-bg-color: #f2f3f5;
+    --light-text-color: #7c899a;
+    --border-color: #e5e8ec;
+    --dark-color: #0a021c;
+ 
+    --font-small: 13px;
+    --font-smaller: 11px;
+ 
+    --percent100: 100%;
+    --percent50: 50%;
+ 
+    --fw3: 300;
+    --fw5: 500;
+    --fw6: 600;
+    --fw7: 700;
+    --fw8: 800;
+ 
+    --trans-background-color: background-color .3s, color .3s;
+    --trans-background-color: background-color .3s;
+    --trans-background-color: color .3s;
+ }
+* {
+    margin:0;
+    padding:0;
+}
+
+*,::before, ::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #0a021c;
+    background-color: rgb(238, 236, 236);
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+strong{
+    font-weight: 800;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input::placeholder {
+    font: inherit;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins';
+}
+
+h1{
+    font-size: calc(1.3em + 1vw);
+    font-weight: 800;
+    line-height: 1;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+pre{
+    font-family: poppins;
+    font-size: 17px ;
+    margin-left: 22px;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0.938cm;
+}
+.column{
+    margin-left: -0.938em;
+    margin-right: -0.938em;
+}
+.column .row{
+    padding: 0 0.938em;
+}
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexitem{
+    display: flex;
+    align-items: center;
+}
+.flexcol{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.main-links a:hover {
+    color: white;
+    background-color: #0d6c00;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.second-links a:hover {
+    color: #7c899a;
+}
+
+/* header */
+header{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+header li > a{
+    display: flex;
+    position: inherit;
+    line-height: inherit;
+    transition: var(--trans-color);
+    margin-left: 15px;
+}
+.header-top .wrapper{
+    font-size: 16px;
+    font-weight: 300;
+    justify-content: space-between;
+    line-height: 42px;
+}
+.header-top .wrapper ul {
+    gap: 2em;
+}
+.header-top li{
+    position: relative;
+}
+.rcontainer{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;   
+}
+.title h2{
+    text-align: left;
+}
+.userd{
+    width:80%;
+    margin: 25px;
+    border: 2px solid rgba(0,0,0,0.1);
+    padding: 15px;
+    box-shadow: 0 1 1 1 rgba(31, 29, 29, 0.02);
+    display: flex;
+    justify-content: space-between;
+}
+.userd h4{
+    margin-bottom: 15px;
+}
+.att .totall, .value .totalr{
+    font-size: 20px;
+    font-weight: bold;
+    color: #da4f63;
+}
+.pro-det{
+    border: 2px solid rgba(0,0,0,0.1);
+    /* display: flex; */
+    width: 80%;
+    margin: 25px;
+    padding: 15px;
+    margin-top: 30px;
+}
+.pdetails{
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+}
+.pro-det h4{
+    /* text-align: center; */
+}
+.pbnp{
+    /* text-align: left;
+    float: left; */
+}
+.pimg{
+    width: 140px;
+    height: auto;
+}
+.pay-outer{
+    border: 2px solid rgba(0,0,0,0.1);
+    width: 80%;
+    margin: 25px;    
+    padding: 15px;   
+}
+.paytrans{    
+    display: flex; 
+    justify-content: space-between;   
+}
+.confirm-btn {
+    text-align: center;
+}
+
+#confirm {
+    background: #0d6c00;
+    color: white;
+    width: 80%;
+    max-width: 800px; 
+    height: 35px;
+    font-size: 18px;
+    margin: 0 auto; 
+    margin-top: 25px; 
+    display: block; 
+}
+.title {
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+.userd, .pro-det, .pay-outer, .confirm-btn {
+    width: 100%; 
+    max-width: 800px;
+    margin-bottom: 20px; 
+}

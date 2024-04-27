@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:  rgb(238, 236, 236);
+}
+.pcontainer{
+    width: 400px;
+    border-radius: 8px;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 0 0 1px rgba(0,0 ,0 ,0.1 ),
+                0 5px 12px -2px rgba(0,0 ,0 ,0.1 ),
+                0 18px 36px -6px rgba(0,0 ,0 ,0.1 );
+}
+.pcontainer .title{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+.pcontainer form .category{
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.pcontainer form input{
+    display: none;
+}
+.category label{
+    width: 100%;
+    height: 65px;
+    padding: 20px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+label:nth-child(2), label:nth-child(3){
+    margin: 15px 0;
+}
+.imgName{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgName span{
+    margin-right: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.itag:not(.itagm){
+    align-items: end;
+    justify-content: right;
+    margin-left: 150px;
+}
+.itagm{
+    align-items: end;
+    justify-content: right;
+    margin-left: 110px;
+}
+.imgName .check{
+    margin-left: 20px;
+}
+.imgName .imgcontain{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 50px;
+    height: auto;
+}
+.check{
+    display: none;
+}
+.check i{
+    font-size: 18px;
+    
+}
+#visa:checked ~ .category .visam, 
+#mastercard:checked ~ .category .mcm, 
+#paypal:checked ~ .category .paym, 
+#upi:checked ~ .category .upim {
+    box-shadow: 0 0 0 1px #0f7d01;
+}
+#visa:checked ~ .category .visam .check, 
+#mastercard:checked ~ .category .mcm .check, 
+#paypal:checked ~ .category .paym .check, 
+#upi:checked ~ .category .upim  .check{
+    display: block;
+}
